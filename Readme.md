@@ -18,4 +18,13 @@ System users (Main modules):-
 (2) Vendor (Seller)
 (3) Customer
 
+Technologies used :-
+
+Programming language :- Java
+
+IDE :- Android studio
+
+Back End connectivity & database :- Firebase (Google cloud platform)
+
+Api used :- Google Maps
 
