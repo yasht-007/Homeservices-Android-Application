@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "913109612608",
+    "firebase_url": "https://kaam25-73e62.firebaseio.com",
+    "project_id": "kaam25-73e62",
+    "storage_bucket": "kaam25-73e62.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:913109612608:android:75ea1f58dfcbb2cb9547a5",
+        "android_client_info": {
+          "package_name": "com.yash.homeservice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "913109612608-dl7ptj4kq94qalkn4uj5sp2nncjnbb4d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.yash.homeservice",
+            "certificate_hash": "43e23220947621b0853240cacb2cd68ff50852ab"
+          }
+        },
+        {
+          "client_id": "913109612608-86ge1me3r0j767rkd1o101p0psa0h8ha.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDauoPd8qBTkNG4Rz-jJZVUkjGOqctUcXA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "913109612608-86ge1me3r0j767rkd1o101p0psa0h8ha.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

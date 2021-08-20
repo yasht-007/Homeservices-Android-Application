@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".Help.AboutUsFragment">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ECECEC">
+
+    <TextView
+        android:id="@+id/tv_aboutUs"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="#fff"
+        android:textStyle="normal"
+        android:text="Kaam25 Company is your one stop destination for all lifestyle services. Kaam25 Company is known for the superlative experience of Salon at home,Spa at home, Appliance repairs, Make up at home, Fitness trainers at home and many more services across India."
+        android:fontFamily="AcadEref"
+        android:textColor="#000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_aboutUs1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="#fff"
+        android:textStyle="normal"
+        android:text="Kaam25 Company is your one stop destination for all lifestyle services. Kaam25 Company is known for the superlative experience of Salon at home,Spa at home, Appliance repairs, Make up at home, Fitness trainers at home and many more services across India."
+        android:fontFamily="AcadEref"
+        android:textColor="#000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_aboutUs" />
+
+    <TextView
+        android:id="@+id/tv_aboutUs2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="#fff"
+        android:textStyle="normal"
+        android:text="Kaam25 Company is your one stop destination for all lifestyle services. Kaam25 Company is known for the superlative experience of Salon at home,Spa at home, Appliance repairs, Make up at home, Fitness trainers at home and many more services across India."
+        android:fontFamily="AcadEref"
+        android:textColor="#000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_aboutUs1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

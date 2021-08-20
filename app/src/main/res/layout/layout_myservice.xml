@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="2dp"
+    android:elevation="4dp"
+    app:cardUseCompatPadding="true"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="137dp">
+
+        <TextView
+            android:id="@+id/msmain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/ic_build_black_24dp"
+            android:text="   Category :- "
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/mssub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:drawableLeft="@drawable/ic_settings_black_24dp"
+            android:text="   Sub category :- "
+            android:textColor="#D31212"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="@+id/msmain"
+            app:layout_constraintTop_toBottomOf="@+id/msmain" />
+
+        <TextView
+            android:id="@+id/mscharge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:drawableLeft="@drawable/ic_rupee"
+            android:text="   Service charge :- "
+            android:textColor="#0D2EE1"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="@+id/mssub"
+            app:layout_constraintTop_toBottomOf="@+id/mssub" />
+
+        <TextView
+            android:id="@+id/mycat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:text="Beauty services"
+            android:textColor="#000000"
+            android:textSize="19dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/msmain"
+            app:layout_constraintStart_toEndOf="@+id/msmain"
+            app:layout_constraintTop_toTopOf="@+id/msmain" />
+
+        <TextView
+            android:id="@+id/mysubcat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:text="Salon"
+            android:textColor="#000000"
+            android:textSize="19dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/mssub"
+            app:layout_constraintStart_toEndOf="@+id/mssub"
+            app:layout_constraintTop_toTopOf="@+id/mssub" />
+
+        <TextView
+            android:id="@+id/myserch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:text="250 - 300"
+            android:textColor="#000000"
+            android:textSize="19dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/mscharge"
+            app:layout_constraintStart_toEndOf="@+id/mscharge"
+            app:layout_constraintTop_toTopOf="@+id/mscharge" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/verify" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/homeicon"
+    android:title="Home"
+    android:icon="@drawable/ic_home_black_24dp"
+    />
+    <item android:id="@+id/bookings"
+        android:title="Cart"
+        android:icon="@drawable/ic_shopping_cart_black_24dp"
+        />
+    <item android:id="@+id/help"
+        android:title="Get Help"
+        android:icon="@drawable/ic_help_black_24dp"
+        />
+    <item android:id="@+id/profile"
+        android:title="Profile"
+        android:visible="true"
+        android:icon="@drawable/ic_account_circle_black_24dp"
+        />
+
+
+</menu>

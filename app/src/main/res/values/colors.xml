@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#B6B6B6</color>
+    <color name="colorAccent">#fca049</color>
+    <color name="colorWhiteTrans">#80BDBDBD</color>
+    <color name="colorOrangeTrans">#80FFF3E0</color>
+    <color name="colorRedTrans">#80ef9a9a</color>
+    <color name="lightgray">#f3f3f3</color>
+    <color name="placeholder">#dddddd</color>
+    <color name="orange">#FF4500</color>
+    <color name="placeholderrc">#FFF9C4</color>
+
+
+
+
+
+    <!--colors for profile-->
+    <color name="profilePrimaryDark">#FF3B30</color>
+    <color name="profileAccentColor">#F7F7F7</color>
+    <color name="whiteTextColor">#fff</color>
+    <color name="profileBackground">#fff</color>
+    <color name="blackTextColor">#000</color>
+    <color name="profileEditTextColor">#707070</color>
+</resources>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Home</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="action_settings">Settings</string>
+    <string name="tab_text_1">In progress</string>
+    <string name="tab_text_2">Completed</string>
+
+    <string name="rupee">₹500 - ₹600</string>
+
+    <string name="first_title">At your doorstep</string>
+    <string name="second_title">Sit back and relax</string>
+    <string name="third_title">On the spot</string>
+
+    <string name="first_descripton">You just have to order and wait.Our \nservice provider will come to your doorstep</string>
+    <string name="second_descripton">Sit back and relax until provider comes</string>
+    <string name="third_descripton">Service providers will come to your location and they will work properly and give you satisfied result.</string>
+
+
+</resources>

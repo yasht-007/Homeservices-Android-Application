@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/lightgray"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/vrlcart"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:id="@+id/immg"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_uercolour"
+
+            />
+        <TextView
+            android:id="@+id/voname"
+            android:text="Yash Tiwari"
+            android:textSize="20dp"
+            android:visibility="invisible"
+            android:layout_toEndOf="@id/immg"
+            android:textColor="@color/orange"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/bree_serif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+<ImageView
+    android:id="@+id/smmg"
+    android:layout_marginStart="15dp"
+    android:layout_below="@id/immg"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:src="@drawable/ic_settings_black_24dp"/>
+        <TextView
+            android:layout_below="@id/immg"
+            android:id="@+id/voservice"
+            android:layout_toEndOf="@id/smmg"
+            android:text="Requested for Salon"
+            android:layout_marginTop="8dp"
+            android:textSize="18dp"
+            android:visibility="invisible"
+            android:textColor="@color/blackTextColor"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/cmmg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/smmg"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_call_black_24dp"
+            />
+
+        <TextView
+            android:layout_marginBottom="8dp"
+            android:id="@+id/vophone"
+            android:layout_toEndOf="@id/cmmg"
+            android:text="9876543210"
+            android:textSize="16dp"
+            android:visibility="invisible"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/blackTextColor"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/voservice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/vorderstatus"
+            android:textSize="18dp"
+            android:textColor="@color/orange"
+            android:layout_below="@id/voservice"
+            android:layout_width="wrap_content"
+            android:visibility="visible"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/bree_serif"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            android:text="Pending" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/lightgray"
+        />
+    <LinearLayout
+        android:layout_marginTop="3dp"
+        android:orientation="vertical"
+        android:id="@+id/expandableview1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:background="@drawable/orderbg"
+            android:layout_width="match_parent"
+            android:layout_marginTop="6dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvar"
+                android:textSize="18dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                android:textColor="@color/orange"
+                android:text="Decided time for service"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvdt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Timing :-"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="15dp"
+                android:layout_below="@id/tvar"
+                android:layout_marginEnd="9dp"
+                android:textColor="@color/blackTextColor"
+                android:textSize="20dp"
+                />
+            <TextView
+
+                android:id="@+id/votiming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:visibility="invisible"
+                android:layout_below="@id/tvar"
+                android:layout_toEndOf="@id/tvdt"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="0dp"
+                android:text="7:00 am to 10:00 pm"
+                />
+            <TextView
+                android:id="@+id/tvtm"
+                android:layout_below="@id/tvdt"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                android:textColor="@color/blackTextColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date :-"
+                android:layout_marginBottom="7dp"
+                />
+            <TextView
+                android:id="@+id/vodate"
+                android:layout_below="@id/tvdt"
+                android:textSize="18dp"
+                android:visibility="invisible"
+                android:layout_toEndOf="@id/tvtm"
+                android:layout_marginTop="11dp"
+                android:layout_marginStart="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="14-4-2020 :-"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:background="@drawable/backordergradient"
+            android:layout_width="match_parent"
+            android:layout_height="75dp">
+
+            <TextView
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                android:fontFamily="@font/bree_serif"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Share this code with professional\nin person only to start job"
+                />
+
+            <TextView
+                android:id="@+id/vocode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="2001"
+                android:visibility="invisible"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:layout_marginEnd="14dp"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/bree_serif"
+                android:textSize="25dp"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:background="@drawable/orderbg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/v"
+                android:text="Delivery address*"
+                android:textSize="18dp"
+                android:textColor="@color/orange"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/vodaddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/v"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/addressbg"
+                android:padding="12dp"
+                android:paddingTop="7dp"
+                android:text="Plot no, Street name, area name, sub area name, locality , state , city , country - pin code"
+                android:textColor="@color/blackTextColor"
+                android:textSize="17dp"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@drawable/orderbg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/voch"
+                android:text="Decided service charge*"
+                android:textSize="18dp"
+                android:textColor="@color/orange"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/vcharge"
+                android:textSize="15dp"
+                android:layout_below="@id/voch"
+                android:text="₹500 - ₹700 (After discount)"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginBottom="5dp"
+                android:visibility="invisible"
+                android:textColor="@color/blackTextColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </RelativeLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <Button
+                android:id="@+id/btnapprove"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:background="@color/orange"
+                android:fontFamily="@font/bree_serif"
+                android:padding="12dp"
+                android:text="Approve order"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:clickable="false"
+                android:id="@+id/btnordercancel"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp"
+                android:background="@color/orange"
+                android:fontFamily="@font/bree_serif"
+                android:padding="12dp"
+                android:text="Cancel order"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</LinearLayout>

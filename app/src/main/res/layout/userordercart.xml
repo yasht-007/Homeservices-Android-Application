@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lightgray"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rlcart"
+        android:elevation="7dp"
+        android:background="@drawable/orderbg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/uoimage"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/userprofile" />
+
+        <TextView
+            android:id="@+id/uoname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yash Tiwari"
+            android:visibility="invisible"
+            android:fontFamily="@font/bree_serif"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@id/uoimage"
+            android:textSize="20dp"
+            android:textColor="@color/blackTextColor"
+            />
+        <TextView
+            android:id="@+id/uoservice"
+            android:text="Carpenter"
+            android:visibility="invisible"
+            android:layout_toEndOf="@id/uoimage"
+            android:layout_below="@id/uoname"
+            android:textSize="18dp"
+            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:id="@+id/uocharge"
+            android:text="₹500 - ₹700"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/uoservice"
+            android:layout_marginStart="20dp"
+            android:visibility="invisible"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/uoimage" />
+
+        <TextView
+            android:id="@+id/orderstatus"
+            android:textSize="18dp"
+            android:textColor="@color/orange"
+            android:layout_below="@id/uoservice"
+            android:layout_width="wrap_content"
+            android:visibility="invisible"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/bree_serif"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            android:text="Pending" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/lightgray"
+        />
+    <LinearLayout
+        android:id="@+id/expandableview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:background="@drawable/orderbg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/orid"
+            android:text="Booking ID*"
+            android:textSize="18dp"
+            android:textColor="@color/orange"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/uobkid"
+            android:textSize="15dp"
+            android:layout_below="@id/orid"
+            android:text="5qVYqiO0cYPb7kzUjMjD"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/blackTextColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="@drawable/orderbg"
+        android:layout_width="match_parent"
+        android:layout_marginTop="6dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvar"
+            android:textSize="18dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:textColor="@color/orange"
+            android:text="Arrival time of our professional"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvdt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Timing :-"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="15dp"
+            android:layout_below="@id/tvar"
+            android:layout_marginEnd="9dp"
+            android:textColor="@color/blackTextColor"
+            android:textSize="20dp"
+            />
+        <TextView
+
+            android:id="@+id/uotiming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:layout_below="@id/tvar"
+            android:layout_toEndOf="@id/tvdt"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="0dp"
+            android:text="7:00 am to 10:00 pm"
+            />
+        <TextView
+            android:id="@+id/tvtm"
+            android:layout_below="@id/tvdt"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:textColor="@color/blackTextColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date :-"
+            android:layout_marginBottom="7dp"
+            />
+        <TextView
+            android:id="@+id/uodate"
+            android:layout_below="@id/tvdt"
+            android:textSize="18dp"
+            android:layout_toEndOf="@id/tvtm"
+            android:layout_marginTop="11dp"
+            android:layout_marginStart="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="14-4-2020 :-"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="@drawable/backordergradient"
+        android:layout_width="match_parent"
+        android:layout_height="75dp">
+
+        <TextView
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:fontFamily="@font/bree_serif"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share this code with professional\nin person only to start job"
+            />
+
+        <TextView
+            android:id="@+id/uocode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="2001"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:layout_marginEnd="14dp"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/bree_serif"
+            android:textSize="25dp"
+            />
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:background="@drawable/orderbg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="12dp"
+                android:id="@+id/tvem"
+                android:textSize="18dp"
+                android:textColor="@color/orange"
+                android:layout_marginStart="15dp"
+                android:text="Contact number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/uonumber"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="8dp"
+                android:layout_below="@id/tvem"
+                android:text="9876543210"
+                android:textSize="16dp"
+                android:textColor="@color/blackTextColor"
+                android:layout_marginBottom="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+            <Button
+                android:id="@+id/btnreschedule"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:background="@color/orange"
+                android:fontFamily="@font/bree_serif"
+                android:padding="12dp"
+                android:text="Reschedule"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnordercancel"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp"
+                android:background="@color/orange"
+                android:fontFamily="@font/bree_serif"
+                android:padding="12dp"
+                android:text="Cancel order"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</LinearLayout>

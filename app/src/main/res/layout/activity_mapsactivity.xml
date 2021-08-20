@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Mapsactivity">
+
+    <RelativeLayout
+        android:minHeight="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:id="@+id/tbloc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/mdback"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="4dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_keyboard_backspace_black_24dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/mdback"
+            android:fontFamily="@font/bree_serif"
+            android:text="Select your location"
+            android:textColor="@android:color/black"
+            android:textSize="20dp" />
+    </RelativeLayout>
+    <View
+        android:id="@+id/tbm"
+        android:layout_below="@id/tbloc"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/profile_bk"
+        />
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="435dp"
+        android:id="@+id/googlemap"
+        android:layout_below="@id/tbm"
+        android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+    <View
+        android:id="@+id/view"
+        android:layout_below="@id/googlemap"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/profile_bk"
+        />
+    <androidx.core.widget.NestedScrollView
+        android:layout_below="@id/view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/delarea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/bree_serif"
+            android:text="Delivery  Area"
+            android:textColor="#FF4500"
+            android:textSize="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/etaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/addressbg"
+            android:paddingTop="7dp"
+            android:layout_margin="30dp"
+            android:text="Om Sai Nagar Kashi Nagar, Udhna, Surat, Gujarat 394210, India  "
+            android:textColor="@android:color/black"
+            android:textSize="17dp"
+            android:padding="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/delarea" />
+
+        <ImageView
+            android:id="@+id/btnchoose"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/addedit"
+            app:layout_constraintBottom_toBottomOf="@+id/etaddress"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/btnsaveadd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/btn"
+            android:text="Save   Location"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etaddress" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

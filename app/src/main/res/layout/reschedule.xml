@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize">
+
+        <ImageView
+            android:id="@+id/bkarrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/flv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/bree_serif"
+            android:text="Reschedule Service "
+            android:textColor="#000000"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/bkarrow"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btndt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose Delivery Date &amp; Time"
+            android:textAlignment="center"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:background="#ff4500"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/bree_serif"
+            android:textColor="#ffffff"
+            />
+
+        <TextView
+            android:id="@+id/tvdate"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/btndt"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="47dp"
+            android:background="@drawable/addressbg"
+            android:padding="10dp"
+            android:text="Date"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/btnsel"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/tvdate"
+            android:layout_alignBottom="@+id/tvdate"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/tvdate"
+            android:background="#ff4500"
+            android:layout_marginTop="-4dp"
+            android:textAllCaps="false"
+            android:layout_marginEnd="8dp"
+            android:textSize="13dp"
+            android:text="Choose date"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:checkedButton="@id/rdet"
+            android:id="@+id/rgtime"
+            android:layout_marginStart="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rdet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8:30 am - 12:30 am"
+                android:textSize="18dp"
+                android:fontFamily="@font/bree_serif"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2:00 pm - 5:00 pm"
+                android:textSize="18dp"
+                android:fontFamily="@font/bree_serif"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5:00 pm - 9:30 pm"
+                android:textSize="18dp"
+                android:fontFamily="@font/bree_serif"/>
+
+        </RadioGroup>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/profile_bk"
+        />
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/btnbk"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="18dp"
+        android:background="#ff4500"
+        android:fontFamily="@font/bree_serif"
+        android:text="Reschedule"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btncan"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="18dp"
+        android:background="#ff4500"
+        android:fontFamily="@font/bree_serif"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
